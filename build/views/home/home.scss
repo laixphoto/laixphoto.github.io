@@ -1,0 +1,107 @@
+.home-box {
+  height: calc(100% - 50px);
+  margin-top: 50px;
+
+  .grid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .card {
+    width: 300px; 
+    margin-bottom: 20px;
+    cursor: zoom-in;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.outer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(#fff,.7);
+  z-index: 998;
+}
+
+.fa-times {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: $black;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+  transition: .3s ease-out;
+  z-index: 999;
+  img {
+    cursor: pointer;
+    @media only screen and (orientation: landscape) {
+      height: 100%;
+    }
+    @media only screen and (orientation: portrait) {
+      width: 100%;
+    }
+  }
+  .prev {
+    position: fixed;
+    top: 10%;
+    left: 20px;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0;
+    transition: .2s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .next {
+    position: fixed;
+    top: 10%;
+    right: 20px;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0;
+    transition: .2s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.hide {
+  opacity: 0;
+  z-index: -1;
+}

@@ -1,0 +1,1 @@
+app.nav = function ($scope, $rootScope, $location, $window, $timeout, $interval) {}

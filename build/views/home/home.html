@@ -1,0 +1,21 @@
+<div class="home-box scroll">
+  <div class="grid" data-masonry data-masonry-options='{ "columnWidth": 300, "gutter": 20, "fitWidth": true }'>
+
+    <div class="card grid-item" data-masonry-item data-ng-repeat="card in cards | orderBy:'destacada' | filter:byCat" ng-click="openPhoto(card, $index)">
+      <img src="../../../assets/photos/{{card.foto}}.jpg" alt="{{card.titol}}">
+    </div>
+
+  </div>
+</div>
+
+<div class="outer-modal hide" ng-click="closePhoto()"></div>
+<i class="fas fa-times hide" ng-click="closePhoto()"></i>
+<div class="modal hide">
+  <img src="{{openFoto}}">
+  <div class="prev" ng-click="imgPrev()">
+    <i class="fas fa-caret-left"></i>
+  </div>
+  <div class="next" ng-click="imgNext()">
+    <i class="fas fa-caret-right"></i>
+  </div>
+</div>

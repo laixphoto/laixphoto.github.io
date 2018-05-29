@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Web languaje -->
+<html lang="es" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <!-- Web skills -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#000">
+    <link rel="apple-touch-icon" type="image/png" href="./assets/img/mobile.png">
+    <link rel="icon" type="image/png" href="./assets/img/mobile.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="verduCode 2018©">
+    <!-- Social preview -->
+    <meta property="og:title" content="Laia Martín | FOTOGRAFÍA">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./assets/img/mobile.png">
+    <title>Laia Martín | FOTOGRAFÍA</title>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/m.styles.css">
+    <!-- Fonts / Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+</head>
+
+<body ng-app="app">
+
+    <!-- Build -->
+    <nav ng-controller="appController" ng-include="'./build/nav/nav.html'" class="row"></nav>
+    <div class="build" ng-view></div>
+
+    <!-- Libs -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="./lib/masonry.js"></script> 
+    <script src="./lib/angular.js"></script>
+    <script src="./lib/angular-masonry.js"></script>
+    <script src="./lib/route.js"></script>
+    <script src="./lib/animate.js"></script>
+    <script src="./lib/angular_es.js"></script>
+
+    <script src="./main.js"></script>
+
+    <!-- Nav -->
+    <script src="./build/nav/nav.js"></script>
+
+    <!-- Views functions -->
+    <script src="./build/views/home/home.js"></script>
+
+</body>
+
+</html>

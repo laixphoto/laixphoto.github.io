@@ -1,0 +1,52 @@
+//basics
+$black: #130522;
+$white: #fff;
+$grey: #b3b3b3;
+
+$bg: #fafafa;
+
+//hyperlinks
+$blue: #19b5fe;
+
+//primary colors
+$pri: #B62234;
+$sec: #85D0F4;
+
+//horizontal gradients
+@mixin hGrad {
+    background: $black;
+    background: -webkit-linear-gradient(to right, transparent, $black);
+    background: linear-gradient(to right, transparent, $black);
+}
+
+//vertical gradients
+@mixin vGrad {
+    background: $black;
+    background: -webkit-linear-gradient(to bottom, transparent, $black);
+    background: linear-gradient(to bottom, transparent, $black);
+}
+
+//shadows
+$flat: 0 0 10px 0 rgba(#000, .5);
+$light: 0 2px 3px 0 rgba(#000, .16), 0 0 0 1px rgba(#000, .08);
+$dark: 0 2px 4px 0 rgba(#000, .6);
+
+//fonts
+$title-pri: 'fu';
+$title-sec: 'he';
+$text: 'Fira Mono'; 
+
+//scrollbar style
+.scrollbar::-webkit-scrollbar-track {
+    background-color: $bg;
+    border-radius: 28px;
+}
+.scrollbar::-webkit-scrollbar {
+    width: 28px;
+    background-color: $bg;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+    border: 10px solid $bg;
+    border-radius: 28px;
+    background: $grey;
+}

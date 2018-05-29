@@ -1,0 +1,92 @@
+//ui elements
+
+//DIVIDERS
+.hdiv {
+    width: 100%;
+    height: 1px;
+    background: $grey;
+    margin: 10px 0;
+}
+
+.vdiv {
+    width: 1px;
+    height: 100%;
+    background: $grey;
+    margin: 0 10px;
+}
+
+//BUTTONS
+.btn-lined {
+    padding: 12px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    font-weight: bold;
+    transition: .3s;
+    font-family: $title-pri;
+}
+
+.btn-rounded {
+    padding: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    font-weight: bold;
+    transition: .3s;
+    font-family: $title-pri;
+}
+
+.light {
+    background: $white;
+    color: $black;
+    &:hover {
+        background: $black;
+        color: $white;
+    }
+}
+
+.dark {
+    background: $black;
+    color: $white;
+    &:hover {
+        background: $white;
+        color: $black;
+    }
+}
+
+.pri {
+    background: $pri;
+    color: $white;
+    &:hover {
+        background: $black;
+        color: $white;
+    }
+}
+
+.sec {
+    background: $sec;
+    color: $white;
+    &:hover {
+        background: $black;
+        color: $white;
+    }
+}
+
+//shadows
+.flat {
+    box-shadow: $flat
+}
+
+//fonts
+.title {
+    font-family: $title-pri;
+}
+
+.subtitle {
+    font-family: $title-sec;
+}
+
+.text {
+    font-family: $text;
+}

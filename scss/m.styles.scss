@@ -1,0 +1,12 @@
+@import './assets.scss';
+@import './justUI/animations.scss';
+@import './justUI/framework.scss';
+
+.scroll {
+    -webkit-overflow-scrolling: touch;
+}
+
+//mobile views style
+@import '../build/nav/m.nav.scss';
+@import '../build/views/home/m.home.scss';
+@import '../build/views/contact/m.contact.scss';

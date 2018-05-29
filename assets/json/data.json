@@ -1,0 +1,31 @@
+[
+  {
+    "destacada": false,
+    "categoria": "personal",
+    "foto": "photo-01"
+  },
+  {
+    "destacada": true,
+    "categoria": "publicitaria",
+    "foto": "photo-03"
+  },
+  {
+    "destacada": true,
+    "categoria": "diseño",
+    "foto": "photo-02"
+  },
+  {
+    "categoria": "diseño",
+    "foto": "photo-01"
+  },
+  {
+    "destacada": false,
+    "categoria": "publicitaria",
+    "foto": "photo-03"
+  },
+  {
+    "destacada": true,
+    "categoria": "personal",
+    "foto": "photo-02"
+  }
+]
